@@ -1,0 +1,139 @@
+body {
+  font-family: "Fira Code", sans-serif;
+}
+
+body,
+html {
+  color: rgb(194, 194, 194);
+  background-color: rgb(46, 46, 46);
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+.new {
+  position: absolute;
+  top: min(3vw, 3vh);
+  left: min(86.75vw, 86.75vh);
+  height: min(3vw, 3vh);
+  width: min(5vw, 5vh);
+  font-size: min(1.8vw, 1.8vh);
+  border: none;
+  background-color: rgb(182, 182, 182);
+  box-shadow: 0px 0px min(2vw, 2vh) 0px rgba(0, 0, 0, 0.25);
+  color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+
+.new:hover {
+  background-color: rgb(198, 198, 198);
+  box-shadow: 0px 0px min(2vw, 2vh) 0px rgba(0, 0, 0, 0.45);
+}
+
+.new:active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px min(2vw, 2vh) 0px rgba(0, 0, 0, 0.95);
+}
+
+.board {
+  margin-top: min(8.25vw, 8.25vh);
+  margin-left: min(8.25vw, 8.25vh);
+  width: min(83.5vw, 83.5vh);
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  width: min(9vw, 9vh);
+  height: min(9vw, 9vh);
+  font-size: min(5vw, 5vh);
+  transition-duration: 0.4s;
+  border: none;
+  background-color: rgb(80, 80, 80);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.r1 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.r2 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.r3 {
+  margin-bottom: min(0.5vw, 0.5vh);
+}
+
+.r4 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.r5 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.r6 {
+  margin-bottom: min(0.5vw, 0.5vh);
+}
+
+.r7 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.r8 {
+  margin-bottom: min(0.25vw, 0.25vh);
+}
+
+.c1 {
+  margin-right: min(0.25vw, 0.25vh);
+}
+
+.c2 {
+  margin-right: min(0.25vw, 0.25vh);
+}
+
+.c3 {
+  margin-right: min(0.5vw, 0.5vh);
+}
+
+.c4 {
+  margin-right: min(0.25vw, 0.25vh);
+}
+
+.c5 {
+  margin-right: min(0.25vw, 0.25vh);
+}
+
+.c6 {
+  margin-right: min(0.5vw, 0.5vh);
+}
+
+.c7 {
+  margin-right: min(0.25vw, 0.25vh);
+}
+
+.c8 {
+  margin-right: min(0.25vw, 0.25vh);
+}

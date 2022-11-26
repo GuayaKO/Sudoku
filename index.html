@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fira+Code"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body id="body" onload="newGame()">
+    <div class="main">
+      <button class="new" onClick="newGame()">New</button>
+      <div class="board">
+        <div class="row">
+          <button class="box r1 c1" id="0" onclick=""></button>
+          <button class="box r1 c2" id="1" onclick=""></button>
+          <button class="box r1 c3" id="2" onclick=""></button>
+          <button class="box r1 c4" id="3" onclick=""></button>
+          <button class="box r1 c5" id="4" onclick=""></button>
+          <button class="box r1 c6" id="5" onclick=""></button>
+          <button class="box r1 c7" id="6" onclick=""></button>
+          <button class="box r1 c8" id="7" onclick=""></button>
+          <button class="box r1 c9" id="8" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r2 c1" id="9" onclick=""></button>
+          <button class="box r2 c2" id="10" onclick=""></button>
+          <button class="box r2 c3" id="11" onclick=""></button>
+          <button class="box r2 c4" id="12" onclick=""></button>
+          <button class="box r2 c5" id="13" onclick=""></button>
+          <button class="box r2 c6" id="14" onclick=""></button>
+          <button class="box r2 c7" id="15" onclick=""></button>
+          <button class="box r2 c8" id="16" onclick=""></button>
+          <button class="box r2 c9" id="17" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r3 c1" id="18" onclick=""></button>
+          <button class="box r3 c2" id="19" onclick=""></button>
+          <button class="box r3 c3" id="20" onclick=""></button>
+          <button class="box r3 c4" id="21" onclick=""></button>
+          <button class="box r3 c5" id="22" onclick=""></button>
+          <button class="box r3 c6" id="23" onclick=""></button>
+          <button class="box r3 c7" id="24" onclick=""></button>
+          <button class="box r3 c8" id="25" onclick=""></button>
+          <button class="box r3 c9" id="26" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r4 c1" id="27" onclick=""></button>
+          <button class="box r4 c2" id="28" onclick=""></button>
+          <button class="box r4 c3" id="29" onclick=""></button>
+          <button class="box r4 c4" id="30" onclick=""></button>
+          <button class="box r4 c5" id="31" onclick=""></button>
+          <button class="box r4 c6" id="32" onclick=""></button>
+          <button class="box r4 c7" id="33" onclick=""></button>
+          <button class="box r4 c8" id="34" onclick=""></button>
+          <button class="box r4 c9" id="35" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r5 c1" id="36" onclick=""></button>
+          <button class="box r5 c2" id="37" onclick=""></button>
+          <button class="box r5 c3" id="38" onclick=""></button>
+          <button class="box r5 c4" id="39" onclick=""></button>
+          <button class="box r5 c5" id="40" onclick=""></button>
+          <button class="box r5 c6" id="41" onclick=""></button>
+          <button class="box r5 c7" id="42" onclick=""></button>
+          <button class="box r5 c8" id="43" onclick=""></button>
+          <button class="box r5 c9" id="44" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r6 c1" id="45" onclick=""></button>
+          <button class="box r6 c2" id="46" onclick=""></button>
+          <button class="box r6 c3" id="47" onclick=""></button>
+          <button class="box r6 c4" id="48" onclick=""></button>
+          <button class="box r6 c5" id="49" onclick=""></button>
+          <button class="box r6 c6" id="50" onclick=""></button>
+          <button class="box r6 c7" id="51" onclick=""></button>
+          <button class="box r6 c8" id="52" onclick=""></button>
+          <button class="box r6 c9" id="53" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r7 c1" id="54" onclick=""></button>
+          <button class="box r7 c2" id="55" onclick=""></button>
+          <button class="box r7 c3" id="56" onclick=""></button>
+          <button class="box r7 c4" id="57" onclick=""></button>
+          <button class="box r7 c5" id="58" onclick=""></button>
+          <button class="box r7 c6" id="59" onclick=""></button>
+          <button class="box r7 c7" id="60" onclick=""></button>
+          <button class="box r7 c8" id="61" onclick=""></button>
+          <button class="box r7 c9" id="62" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r8 c1" id="63" onclick=""></button>
+          <button class="box r8 c2" id="64" onclick=""></button>
+          <button class="box r8 c3" id="65" onclick=""></button>
+          <button class="box r8 c4" id="66" onclick=""></button>
+          <button class="box r8 c5" id="67" onclick=""></button>
+          <button class="box r8 c6" id="68" onclick=""></button>
+          <button class="box r8 c7" id="69" onclick=""></button>
+          <button class="box r8 c8" id="70" onclick=""></button>
+          <button class="box r8 c9" id="71" onclick=""></button>
+        </div>
+        <div class="row">
+          <button class="box r9 c1" id="72" onclick=""></button>
+          <button class="box r9 c2" id="73" onclick=""></button>
+          <button class="box r9 c3" id="74" onclick=""></button>
+          <button class="box r9 c4" id="75" onclick=""></button>
+          <button class="box r9 c5" id="76" onclick=""></button>
+          <button class="box r9 c6" id="77" onclick=""></button>
+          <button class="box r9 c7" id="78" onclick=""></button>
+          <button class="box r9 c8" id="79" onclick=""></button>
+          <button class="box r9 c9" id="80" onclick=""></button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
